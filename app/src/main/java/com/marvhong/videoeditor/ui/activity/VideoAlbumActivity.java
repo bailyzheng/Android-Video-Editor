@@ -2,8 +2,8 @@ package com.marvhong.videoeditor.ui.activity;
 
 import android.content.Context;
 import android.content.Intent;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import butterknife.BindView;
 import com.marvhong.videoeditor.R;
 import com.marvhong.videoeditor.adapter.VideoGridAdapter;

@@ -12,13 +12,13 @@ import com.tbruyelle.rxpermissions2.RxPermissions;
 import io.reactivex.Observer;
 import io.reactivex.disposables.Disposable;
 
-public class MainActivity extends BaseActivity {
+public class VideoEditorMainActivity extends BaseActivity {
 
     private RxPermissions mRxPermissions;
 
     @Override
     protected int getLayoutId() {
-        return R.layout.activity_main;
+        return R.layout.activity_video_editor_main;
     }
 
     @Override
@@ -48,10 +48,10 @@ public class MainActivity extends BaseActivity {
                 @Override
                 public void onNext(Boolean granted) {
                     if (granted) { //已获取权限
-                        Intent intent = new Intent(MainActivity.this, VideoCameraActivity.class);
+                        Intent intent = new Intent(VideoEditorMainActivity.this, VideoCameraActivity.class);
                         startActivityForResult(intent, 100);
                     } else {
-                        Toast.makeText(MainActivity.this, "给点权限行不行？", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(VideoEditorMainActivity.this, "给点权限行不行？", Toast.LENGTH_SHORT).show();
                     }
                 }
 
@@ -83,10 +83,10 @@ public class MainActivity extends BaseActivity {
                 @Override
                 public void onNext(Boolean granted) {
                     if (granted) { //已获取权限
-                        Intent intent = new Intent(MainActivity.this, VideoAlbumActivity.class);
+                        Intent intent = new Intent(VideoEditorMainActivity.this, VideoAlbumActivity.class);
                         startActivityForResult(intent, 100);
                     } else {
-                        Toast.makeText(MainActivity.this, "给点权限行不行？", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(VideoEditorMainActivity.this, "给点权限行不行？", Toast.LENGTH_SHORT).show();
                     }
                 }
 

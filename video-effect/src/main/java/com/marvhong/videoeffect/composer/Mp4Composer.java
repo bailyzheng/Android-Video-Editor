@@ -1,7 +1,7 @@
 package com.marvhong.videoeffect.composer;
 
 import android.media.MediaMetadataRetriever;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import android.util.Log;
 import com.marvhong.videoeffect.FillMode;
 import com.marvhong.videoeffect.FillModeCustomItem;
